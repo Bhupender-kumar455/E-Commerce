@@ -1,0 +1,56 @@
+.fixed-top {
+  backdrop-filter: blur(10px);
+}
+.searchbar_parent {
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+}
+.searchbar_parent .box {
+  position: absolute;
+  width: 100%;
+  overflow-y: scroll;
+  top: 95%;
+  height: 300px;
+}
+.searchbar_parent .box .searchBox {
+  display: flex;
+  max-width: 100%;
+  background-color: #ceab8e;
+  padding: 10px;
+  align-items: flex-start;
+}
+.searchbar_parent .box::-webkit-scrollbar {
+  display: none;
+}
+.searchbar_parent .box .searchBox img {
+  width: 45px;
+  mix-blend-mode: darken;
+  margin-right: 5px;
+}
+.searchbar_parent .box .searchBox p {
+  font-family: "poppins";
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+#brand {
+  font-size: 27px;
+}
+.searchbar_parent .searchbar {
+  width: 100%;
+  border: 2px solid #504348;
+  color: white;
+  background-color: #b1a2996c;
+}
+.searchbar_parent .searchbar:focus {
+  outline: none;
+}
+.searchbar_parent .searchbar:focus::placeholder {
+  color: white;
+}
+.navIconParent {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}

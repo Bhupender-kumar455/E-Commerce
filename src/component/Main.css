@@ -1,0 +1,62 @@
+.mainParent {
+  position: relative;
+}
+.mainParent img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.textPart {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #504348;
+  font-size: 18px;
+  z-index: 1;
+}
+.textPart p {
+  font-size: 20px;
+}
+.textPart h1 {
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.shopNowButton {
+  border: none;
+  margin-top: 30px;
+  background-color: black;
+  padding: 5px 40px;
+  color: azure;
+  font-size: 17px;
+}
+.mainParent {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 1161px) {
+  .textPart h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .mainParent img {
+    max-width: 100vw;
+    height: 800px;
+  }
+  .textPart {
+    left: 30%;
+    object-fit: cover;
+  }
+  .textPart h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .textPart {
+    left: 40%;
+  }
+}
